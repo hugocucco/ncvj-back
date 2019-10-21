@@ -80,7 +80,7 @@ class PessoasController {
       cpf: Yup.number()
         .required()
         .min(11),
-      pendencia: Yup.boolean().required(),
+      pendencia: Yup.string().required(),
     });
 
     if (!(await schema.isValid(req.body))) {

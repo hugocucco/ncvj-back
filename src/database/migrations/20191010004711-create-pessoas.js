@@ -26,13 +26,13 @@ module.exports = {
         unique: true,
       },
       pendencia: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: false,
+        type: Sequelize.STRING,
+        defaultValue: 'false',
         allowNull: false,
       },
       uf_pendencia: {
         type: Sequelize.STRING,
-        defaultValue: null,
+        defaultValue: '',
       },
       created_at: {
         type: Sequelize.DATE,

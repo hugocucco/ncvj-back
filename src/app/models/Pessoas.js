@@ -8,7 +8,7 @@ class Pessoas extends Model {
         cpf: Sequelize.STRING,
         uf_origem: Sequelize.STRING,
         template1: Sequelize.STRING,
-        pendencia: Sequelize.BOOLEAN,
+        pendencia: Sequelize.STRING,
         uf_pendencia: Sequelize.STRING,
       },
       {
