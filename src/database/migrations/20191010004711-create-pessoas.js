@@ -27,7 +27,7 @@ module.exports = {
       },
       pendencia: {
         type: Sequelize.STRING,
-        defaultValue: 'false',
+        defaultValue: 'não',
         allowNull: false,
       },
       uf_pendencia: {
