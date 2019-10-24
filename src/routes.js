@@ -12,6 +12,8 @@ import ConsultaBioController from './app/controllers/ConsultaBioController';
 
 import CondenadoController from './app/controllers/CondenadoController';
 
+import TemplatesController from './app/controllers/TemplatesController';
+
 import authMiddleware from './app/middlewares/auth';
 
 const routes = new Router();
@@ -32,6 +34,8 @@ routes.post('/consultacpf', ConsultaCPFController.index);
 routes.post('/consultabio', ConsultaBioController.index);
 
 routes.get('/condenados', CondenadoController.index);
+
+routes.get('/templates', TemplatesController.index);
 
 routes.post('/files', upload.single('file'), FileController.store);
 
