@@ -33,6 +33,13 @@ class ConsultaCPFController {
       //   },
       // ],
     });
+    
+    if (!pessoas) {
+      return res
+        .status(400)
+        .json({ error: 'Cpf não cadastrado na base de dados!' });
+    }
+    
     return res.json(pessoas);
   }
 }
