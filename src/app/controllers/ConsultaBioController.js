@@ -15,7 +15,6 @@ class ConsultaBioController {
     const pessoas = await Pessoas.findOne({
       where: { template1 },
       attributes: [
-        'id',
         'name',
         'cpf',
         'uf_origem',
