@@ -33,7 +33,7 @@ routes.put('/pessoas', PessoasController.update);
 routes.post('/consultacpf', ConsultaCPFController.index);
 routes.post('/consultabio', ConsultaBioController.index);
 
-routes.get('/condenados', CondenadoController.index);
+routes.post('/condenados', CondenadoController.index);
 
 routes.get('/templates', TemplatesController.index);
 
