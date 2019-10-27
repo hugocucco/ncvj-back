@@ -3,6 +3,7 @@ import 'dotenv/config';
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
+import helmet from 'helmet';
 import routes from './routes';
 
 import './database';
@@ -17,6 +18,7 @@ class App {
   }
 
   middlewares() {
+    this.server.use(helmet());
     this.server.use(cors()); // para dev
     // this.server.use(cors({ origin: 'https://<endereco>.com.br' }));  para prod
     this.server.use(express.json());
