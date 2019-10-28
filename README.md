@@ -3,12 +3,12 @@
 
 .env file structure:
 
-APP_URL=
-NODE_ENV=
+APP_URL= <br />
+NODE_ENV= <br />
 
-APP_SECRET=
+APP_SECRET= <br />
 
-DB_HOST=
-DB_USER=
-DB_PASS=
-DB_NAME=
+DB_HOST= <br />
+DB_USER= <br />
+DB_PASS= <br />
+DB_NAME= <br />
