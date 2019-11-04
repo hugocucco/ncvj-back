@@ -7,7 +7,7 @@ class PessoasController {
   async store(req, res) {
     const schema = Yup.object().shape({
       name: Yup.string().required(),
-      cpf: Yup.number()
+      cpf: Yup.string()
         .required()
         .min(11),
       uf_origem: Yup.string().required(),
