@@ -77,7 +77,7 @@ class PessoasController {
 
   async update(req, res) {
     const schema = Yup.object().shape({
-      cpf: Yup.number()
+      cpf: Yup.string()
         .required()
         .min(11),
       pendencia: Yup.string().required(),
