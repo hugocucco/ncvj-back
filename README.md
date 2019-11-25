@@ -1,7 +1,7 @@
 # ncvjback
 
 
-.env file sample structure:
+.env file samples structures:
 
 APP_URL= <br />
 NODE_ENV= <br />
