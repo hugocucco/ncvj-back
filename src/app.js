@@ -21,6 +21,7 @@ class App {
     this.server.use(helmet());
     this.server.use(cors()); // para dev
     // this.server.use(cors({ origin: 'https://<endereco>.com.br' }));  para prod
+    // apenas para testar
     this.server.use(express.json());
     this.server.use(
       '/files',
